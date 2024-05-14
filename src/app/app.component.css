@@ -1,0 +1,28 @@
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.block {
+    position: absolute;
+}
+
+#block1 {
+    top: 0;
+    left: 0;
+}
+
+#block2 {
+    top: 0;
+    right: 0;
+}
+
+#block3 {
+    bottom: 0;
+    left: 0;
+}
+
+#block4 {
+    bottom: 0;
+    right: 0;
+}
