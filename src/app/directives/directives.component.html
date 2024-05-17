@@ -1,0 +1,25 @@
+<ul>
+    <li>Pommes de terre</li>
+    <li [ngStyle]="{backgroundColor:isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+    <li>Jambon</li>
+    <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+    <li>Chou-fleur</li>
+</ul>
+<ul *ngIf="isGuestListDisplayed">
+    <li>Monika</li>
+    <li>Omori</li>
+    <li>Joël Miller</li>
+    <li>Arthas Menethil</li>
+    <li>Flowey</li>
+</ul>
+<ul>
+    <li *ngFor="let song of songList">
+        {{song}}
+    </li>
+</ul>
+
+<section>
+    <h1 [ngStyle]="{color:isAdmin ? 'red' : null}">Bonjour !</h1>
+    <button>View</button>
+    <button *ngIf="isAdmin">Edit</button>
+</section>
