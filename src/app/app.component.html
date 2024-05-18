@@ -1,10 +1,9 @@
-<div class="container">
-    <div class="block" id="block1"><app-block></app-block></div>
-    <div class="block" id="block2"><app-block></app-block></div>
-    <div class="block" id="block3"><app-block></app-block></div>
-    <div class="block" id="block4"><app-block></app-block></div>
-</div>
+<ul>
+    <li><a [routerLink]="['/home']">Home</a></li>
+    <li><a [routerLink]="['/contact']">Contact</a></li>
+    <li><a [routerLink]="['/user']">User profile</a></li>
+    <li><a [routerLink]="['/directives']">Directives</a></li>
+    <li><a [routerLink]="['/blocks']">Blocks</a></li>
+</ul>
 
-<div><app-user-profile></app-user-profile></div>
-
-<app-directives></app-directives>
+<router-outlet></router-outlet>
