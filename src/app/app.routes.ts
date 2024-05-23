@@ -5,6 +5,8 @@ import { ContactComponent } from './contact/contact.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { BlockComponent } from './block/block.component';
+import { MyFormComponent } from './my-form/my-form.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 export const routes: Routes = [{
     path: 'home',
@@ -25,6 +27,14 @@ export const routes: Routes = [{
 {
     path: 'blocks',
     component: BlockComponent
+},
+{
+    path: 'form',
+    component: MyFormComponent
+},
+{
+    path: 'signup',
+    component: SignUpComponent
 }
 ];
 
