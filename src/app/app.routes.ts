@@ -9,6 +9,7 @@ import { MyFormComponent } from './my-form/my-form.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
+import { DeveloperComponent } from './developer/developer.component';
 
 export const routes: Routes = [{
     path: 'home',
@@ -45,6 +46,10 @@ export const routes: Routes = [{
 {
     path: 'user',
     component: UserComponent
+},
+{
+    path: 'developer',
+    component: DeveloperComponent
 }
 ];
 

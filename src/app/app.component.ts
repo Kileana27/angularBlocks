@@ -5,6 +5,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { NgClass } from '@angular/common';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

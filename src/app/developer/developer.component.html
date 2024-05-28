@@ -1,0 +1,15 @@
+<h1>Profil</h1>
+
+<ul>
+    <li>Nom : {{camille.lastname}}</li>
+    <li>Prénom : {{camille.firstname}}</li>
+    <li>Age : {{camille.age}}</li>
+    <li>Genre : {{camille.gender}}</li>
+    <li>Biographie : {{camille.bio}}</li>
+</ul>
+
+<ul>
+    @for (skill of camille.skills; track skill) {
+    <app-skill [skill]="skill"></app-skill>
+    }
+</ul>
