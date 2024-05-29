@@ -1,0 +1,7 @@
+<form #onomatopiaForm="ngForm" (ngSubmit)="onomatopiaForm.valid && createOnomatopia()">
+    <h3>Créer une onomatopée : </h3>
+    <p>{{ newOnomatopia }}</p>
+    <input type="text" name="newOnomatopia" id="newOnomatopia" [(ngModel)]="newOnomatopia">
+    <br>
+    <button type="submit" (click)="sendOnomatopiaToParent">Envoyer l'onomatopée</button>
+</form>

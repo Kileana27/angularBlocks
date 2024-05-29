@@ -10,6 +10,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
 import { DeveloperComponent } from './developer/developer.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
+import { OnomatopiaListComponent } from './onomatopia-list/onomatopia-list.component';
 
 export const routes: Routes = [{
     path: 'home',
@@ -50,6 +52,10 @@ export const routes: Routes = [{
 {
     path: 'developer',
     component: DeveloperComponent
+},
+{
+    path: 'onomatopia',
+    component: OnomatopiaListComponent
 }
 ];
 
