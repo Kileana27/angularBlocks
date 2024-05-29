@@ -12,6 +12,7 @@ import { UserComponent } from './user/user.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 import { OnomatopiaListComponent } from './onomatopia-list/onomatopia-list.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 export const routes: Routes = [{
     path: 'home',
@@ -56,6 +57,10 @@ export const routes: Routes = [{
 {
     path: 'onomatopia',
     component: OnomatopiaListComponent
+},
+{
+    path: 'cocktails',
+    component: CocktailListComponent
 }
 ];
 
