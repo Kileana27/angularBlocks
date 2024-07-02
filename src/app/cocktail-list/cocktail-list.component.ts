@@ -15,6 +15,8 @@ export class CocktailListComponent {
   private cocktailService = inject(CocktailService);
 
   ngOnInit() {
-    this.cocktails = this.cocktailService.getCocktails();
+    this.cocktailService.getCocktails().subscribe(cocktailsFromJsonFile => {
+      this.cocktails = cocktailsFromJsonFile;
+    })
   }
 }

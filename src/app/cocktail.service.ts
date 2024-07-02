@@ -1,33 +1,19 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Cocktail } from './models/cocktail.model';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CocktailService {
 
-  constructor() { }
+ private http = inject(HttpClient);
 
-  cocktails: Cocktail[] = [
-    new Cocktail(
-      "Gin Fizz",
-      "12€",
-      "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2018/06/shutterstock_2181241651-768x512.jpg"
-    ),
-    new Cocktail(
-      "Moscow Mule",
-      "14€",
-      "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/137002_origin-615x410.jpg"
-    ),
-    new Cocktail(
-      "Blue Margarita",
-      "13€",
-      "https://www.cocktailmag.fr/media/k2/items/cache/f84d217853d263e771f2d4ffc4c6fcef_M.jpg"
-    )
-  ];
+ contructor() {}
 
-  getCocktails() {
-    return this.cocktails;
-  }
+ getCocktails(): Observable<Cocktail[]> {
+  return this.http.get<Cocktail[]>("assets/data/cocktails.json");
+ }
 }
 

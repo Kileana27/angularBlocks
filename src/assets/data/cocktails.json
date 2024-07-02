@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Sex on the beach",
+        "price": 10,
+        "img": "https://tequilapop.dk/wp-content/uploads/elementor/thumbs/sex_on_the_beach-q6whx82luunijtfjaz95dtd0akojyaezrn5xe9bksw.jpg"
+    },
+    {
+        "name": "Margarita",
+        "price": 13,
+        "img": "https://vinepair.com/wp-content/uploads/2023/08/margarita-google-1000x1000.jpg"
+    },
+    {
+        "name": "Martini",
+        "price": 8,
+        "img": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/dirty-martini-3e964eb.jpg?quality=90&resize=500,454"
+    },
+    {
+        "name": "Gin Fizz",
+        "price": 12,
+        "img": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2018/06/shutterstock_2181241651-768x512.jpg"
+    },
+    {
+        "name": "Moscow Mule",
+        "price": 14,
+        "img": "https://www.1001cocktails.com/wp-content/uploads/1001cocktails/2023/03/137002_origin-615x410.jpg"
+    },
+    {
+        "name": "Blue Margarita",
+        "price": 13,
+        "img": "https://www.cocktailmag.fr/media/k2/items/cache/f84d217853d263e771f2d4ffc4c6fcef_M.jpg"
+    }
+]
